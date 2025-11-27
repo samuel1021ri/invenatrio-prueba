@@ -1,5 +1,5 @@
 <?php
-include "conexion.php";
+include "../config/conexion.php";
 
 $sql = "UPDATE productos SET nombre=:n, precio=:p WHERE id=:id";
 $stmt = $pdo->prepare($sql);

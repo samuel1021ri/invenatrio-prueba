@@ -1,5 +1,5 @@
 <?php
-include "conexion.php";
+include "../config/conexion.php";
 
 $sql = "INSERT INTO productos (nombre, precio) VALUES (:n, :p)";
 $stmt = $pdo->prepare($sql);
